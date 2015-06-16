@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0103E31B305BA700923F1A /* PARMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0103E11B305BA700923F1A /* PARMainViewController.m */; };
+		1C0103E41B305BA700923F1A /* PARMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0103E21B305BA700923F1A /* PARMainViewController.xib */; };
+		1C0103E61B306BCA00923F1A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0103E51B306BCA00923F1A /* MapKit.framework */; };
+		1C0103E91B306C0D00923F1A /* PARLocationTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0103E81B306C0D00923F1A /* PARLocationTracker.m */; };
+		1C0103EC1B3072E500923F1A /* PARSlackRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0103EB1B3072E500923F1A /* PARSlackRequestManager.m */; };
+		1C0103EF1B30A5E400923F1A /* PARSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0103EE1B30A5E400923F1A /* PARSettings.m */; };
 		1EFFBD38D1C3FC69E42144F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53086146A184FD3940109FA9 /* main.m */; };
 		52FBC2762F8AA701E5B90958 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD9DED3CAF46BAF6786305D /* libPods-unit_tests.a */; };
 		5F93E8BAB17B07E13B61936A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052D652B147C080E993B7BEF /* Images.xcassets */; };
 		9085418FEF35171B4B239271 /* PARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416F727E5F3D93125B5C598 /* PARAppDelegate.m */; };
 		AAB7426B22DE32486BBCE626 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C6A7047D2DE70A2428FC4AB /* Settings.bundle */; };
 		C5ED2934329037EE128AAC34 /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9727204259512ACBA804CC6F /* LaunchScreen.xib */; };
+		E0FADD39A1ADD676D68835B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210CD07148FCC8A51CC8046 /* libPods.a */; };
 		F8016FCC4A39B50267F40DDA /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = C1FB24EFB72BC2378F1500C9 /* Main.storyboard */; };
 		F89EC31E6BF8CC72C509904A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B2E160FE0FFDDB069A3749 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -32,17 +39,30 @@
 		052D652B147C080E993B7BEF /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0821B51AE44E8285CBFD5522 /* Pods-unit_tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.release.xcconfig"; sourceTree = "<group>"; };
 		15D77D50F0AD9DB96DA81C35 /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C0103E01B305BA700923F1A /* PARMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PARMainViewController.h; path = ../Views/PARMainViewController.h; sourceTree = "<group>"; };
+		1C0103E11B305BA700923F1A /* PARMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PARMainViewController.m; path = ../Views/PARMainViewController.m; sourceTree = "<group>"; };
+		1C0103E21B305BA700923F1A /* PARMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PARMainViewController.xib; path = ../Views/PARMainViewController.xib; sourceTree = "<group>"; };
+		1C0103E51B306BCA00923F1A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1C0103E71B306C0D00923F1A /* PARLocationTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARLocationTracker.h; sourceTree = "<group>"; };
+		1C0103E81B306C0D00923F1A /* PARLocationTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARLocationTracker.m; sourceTree = "<group>"; };
+		1C0103EA1B3072E500923F1A /* PARSlackRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARSlackRequestManager.h; sourceTree = "<group>"; };
+		1C0103EB1B3072E500923F1A /* PARSlackRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARSlackRequestManager.m; sourceTree = "<group>"; };
+		1C0103ED1B30A5E400923F1A /* PARSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARSettings.h; sourceTree = "<group>"; };
+		1C0103EE1B30A5E400923F1A /* PARSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARSettings.m; sourceTree = "<group>"; };
+		2210CD07148FCC8A51CC8046 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6A7047D2DE70A2428FC4AB /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		44B2E160FE0FFDDB069A3749 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		53086146A184FD3940109FA9 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6416F727E5F3D93125B5C598 /* PARAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PARAppDelegate.m; sourceTree = "<group>"; };
+		6416F727E5F3D93125B5C598 /* PARAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PARAppDelegate.m; path = Controllers/PARAppDelegate.m; sourceTree = "<group>"; };
 		673C2C30C3324245735764BB /* IntrepidCheckIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntrepidCheckIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4BC7A4C83F7C8948770277 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9727204259512ACBA804CC6F /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		9CD9DED3CAF46BAF6786305D /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7555EF0287631E78740026B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28A9DC02D5C73480E2D9B36 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6350642877C1CEA8DCD1963 /* PARAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PARAppDelegate.h; sourceTree = "<group>"; };
+		B6350642877C1CEA8DCD1963 /* PARAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PARAppDelegate.h; path = Controllers/PARAppDelegate.h; sourceTree = "<group>"; };
 		B69B12ADF5CE7B55B4EB3FB1 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		B983871B4FD701974785210A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C1FB24EFB72BC2378F1500C9 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FD0077A3263B0FBCD8B026A9 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0103E61B306BCA00923F1A /* MapKit.framework in Frameworks */,
 				F89EC31E6BF8CC72C509904A /* Foundation.framework in Frameworks */,
+				E0FADD39A1ADD676D68835B5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +92,8 @@
 		0DA10469F3525F813BACB72B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1C0103ED1B30A5E400923F1A /* PARSettings.h */,
+				1C0103EE1B30A5E400923F1A /* PARSettings.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -77,8 +101,9 @@
 		2438911DFD998676069BA313 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B6350642877C1CEA8DCD1963 /* PARAppDelegate.h */,
-				6416F727E5F3D93125B5C598 /* PARAppDelegate.m */,
+				1C0103E01B305BA700923F1A /* PARMainViewController.h */,
+				1C0103E11B305BA700923F1A /* PARMainViewController.m */,
+				1C0103E21B305BA700923F1A /* PARMainViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -93,8 +118,10 @@
 		4340B59E5E0C842CCF3C4440 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1C0103E51B306BCA00923F1A /* MapKit.framework */,
 				FB437EA048847D95E0C43F7D /* iOS */,
 				9CD9DED3CAF46BAF6786305D /* libPods-unit_tests.a */,
+				2210CD07148FCC8A51CC8046 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +144,10 @@
 		9028D2E034B3C334D5F41BD9 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				1C0103E71B306C0D00923F1A /* PARLocationTracker.h */,
+				1C0103E81B306C0D00923F1A /* PARLocationTracker.m */,
+				1C0103EA1B3072E500923F1A /* PARSlackRequestManager.h */,
+				1C0103EB1B3072E500923F1A /* PARSlackRequestManager.m */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -126,6 +157,8 @@
 			children = (
 				0821B51AE44E8285CBFD5522 /* Pods-unit_tests.release.xcconfig */,
 				15D77D50F0AD9DB96DA81C35 /* Pods-unit_tests.debug.xcconfig */,
+				B983871B4FD701974785210A /* Pods.release.xcconfig */,
+				7E4BC7A4C83F7C8948770277 /* Pods.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -233,6 +266,8 @@
 		F7C9367E31B2573BE5FC2D8A /* IntrepidCheckIn */ = {
 			isa = PBXGroup;
 			children = (
+				B6350642877C1CEA8DCD1963 /* PARAppDelegate.h */,
+				6416F727E5F3D93125B5C598 /* PARAppDelegate.m */,
 				9F77BEE0AD58E7F45FF5D453 /* Categories */,
 				9028D2E034B3C334D5F41BD9 /* Protocols */,
 				D651F20B12B3753081EC52DC /* Headers */,
@@ -260,11 +295,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BA84D6E8A8AF038DCDF7483 /* Build configuration list for PBXNativeTarget "IntrepidCheckIn" */;
 			buildPhases = (
+				8E8A2428113186ACD85D906C /* Check Pods Manifest.lock */,
 				D2E418D91DE1222873BF5F61 /* Sources */,
 				D2DC8D368159CDEAF6E9851C /* Frameworks */,
 				2D6AA6AB1F404E75F773DB08 /* Resources */,
 				6A9A67A73C668E2B2FCACBE7 /* Warn for TODO and FIXME comments */,
 				524E9BC058162DBD17DF9166 /* Set version number */,
+				3A0A2E339F3B7F5B28DBEDE7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,6 +341,15 @@
 				CLASSPREFIX = PAR;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Intrepid;
+				TargetAttributes = {
+					6D3153C775124CC7EB9F4E58 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 260F50C8E7F0E92AD85C7847 /* Build configuration list for PBXProject "IntrepidCheckIn" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -328,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0103E41B305BA700923F1A /* PARMainViewController.xib in Resources */,
 				5F93E8BAB17B07E13B61936A /* Images.xcassets in Resources */,
 				AAB7426B22DE32486BBCE626 /* Settings.bundle in Resources */,
 			);
@@ -358,6 +405,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3A0A2E339F3B7F5B28DBEDE7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		524E9BC058162DBD17DF9166 /* Set version number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +447,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"swift|h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+		8E8A2428113186ACD85D906C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 		C55F2BE27DFAD9F5DD9FF7BB /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -416,8 +493,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9085418FEF35171B4B239271 /* PARAppDelegate.m in Sources */,
+				1C0103E31B305BA700923F1A /* PARMainViewController.m in Sources */,
 				F8016FCC4A39B50267F40DDA /* Main.storyboard in Sources */,
+				1C0103E91B306C0D00923F1A /* PARLocationTracker.m in Sources */,
+				1C0103EF1B30A5E400923F1A /* PARSettings.m in Sources */,
 				C5ED2934329037EE128AAC34 /* LaunchScreen.xib in Sources */,
+				1C0103EC1B3072E500923F1A /* PARSlackRequestManager.m in Sources */,
 				1EFFBD38D1C3FC69E42144F5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +516,7 @@
 /* Begin XCBuildConfiguration section */
 		0E9004C62459331E01A89060 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B983871B4FD701974785210A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
@@ -462,6 +544,7 @@
 		};
 		2E1386B4BAE81E9CA24096FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4BC7A4C83F7C8948770277 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;

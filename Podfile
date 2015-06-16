@@ -3,6 +3,8 @@ source 'https://github.com/CocoaPods/Specs'
 platform :ios, '8.0'
 
 # Add Application pods here
+pod 'AFNetworking'
+pod 'IQKeyboardManager'
 
 target :unit_tests, :exclusive => true do
   link_with 'UnitTests'

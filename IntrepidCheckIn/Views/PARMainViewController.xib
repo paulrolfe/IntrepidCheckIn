@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PARMainViewController">
+            <connections>
+                <outlet property="nameTextField" destination="iVh-mN-xPf" id="nrc-Ma-svh"/>
+                <outlet property="trackButton" destination="XTy-yz-9Pq" id="8eN-BI-3G3"/>
+                <outlet property="trackingStatus" destination="WMR-aq-hff" id="8Pj-8D-1dK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTy-yz-9Pq">
+                    <rect key="frame" x="71" y="70" width="459" height="459"/>
+                    <color key="backgroundColor" red="0.93141541353142787" green="0.43094443921409464" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="XTy-yz-9Pq" secondAttribute="height" multiplier="1:1" id="dO1-SP-oUX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Track!">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="trackButtonPressed:" destination="-1" eventType="touchUpInside" id="Kuj-YX-baZ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracking on/off" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMR-aq-hff">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iVh-mN-xPf">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="144" id="xHJ-T2-uZF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xHJ-T2-uZF"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="xHJ-T2-uZF"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="wIj-ob-JqP"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwH-oq-aBY">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracking will send a message to #whos-here channel on slack when you enter the Intrepid building." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1y-m7-BWu">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WMR-aq-hff" firstAttribute="centerX" secondItem="XTy-yz-9Pq" secondAttribute="centerX" id="2gk-vD-08s"/>
+                <constraint firstItem="XTy-yz-9Pq" firstAttribute="top" secondItem="WMR-aq-hff" secondAttribute="bottom" constant="8" id="7Fw-T4-7iN"/>
+                <constraint firstItem="B1y-m7-BWu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="7to-bL-1ns"/>
+                <constraint firstItem="XTy-yz-9Pq" firstAttribute="leading" secondItem="wwH-oq-aBY" secondAttribute="leading" id="CXg-mq-z3H"/>
+                <constraint firstAttribute="centerX" secondItem="iVh-mN-xPf" secondAttribute="centerX" id="DUX-An-sbH"/>
+                <constraint firstAttribute="trailing" secondItem="XTy-yz-9Pq" secondAttribute="trailing" constant="70" id="EgM-tp-t6X"/>
+                <constraint firstAttribute="centerX" secondItem="iVh-mN-xPf" secondAttribute="centerX" id="Ick-AD-XUp"/>
+                <constraint firstItem="iVh-mN-xPf" firstAttribute="leading" secondItem="wwH-oq-aBY" secondAttribute="trailing" constant="8" id="M07-P9-bsu"/>
+                <constraint firstAttribute="trailing" secondItem="B1y-m7-BWu" secondAttribute="trailing" constant="16" id="TwX-xQ-85x"/>
+                <constraint firstAttribute="centerX" secondItem="B1y-m7-BWu" secondAttribute="centerX" id="Unb-xR-i7U"/>
+                <constraint firstAttribute="centerY" secondItem="XTy-yz-9Pq" secondAttribute="centerY" id="VfQ-Xg-ist"/>
+                <constraint firstItem="iVh-mN-xPf" firstAttribute="baseline" secondItem="wwH-oq-aBY" secondAttribute="baseline" id="WJo-qp-hWf"/>
+                <constraint firstAttribute="centerX" secondItem="XTy-yz-9Pq" secondAttribute="centerX" id="btD-kW-a36"/>
+                <constraint firstItem="B1y-m7-BWu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="d5r-s6-Dba"/>
+                <constraint firstItem="WMR-aq-hff" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="gTS-No-DYM"/>
+                <constraint firstItem="iVh-mN-xPf" firstAttribute="top" secondItem="XTy-yz-9Pq" secondAttribute="bottom" constant="8" id="mXU-PS-Dtd"/>
+                <constraint firstItem="XTy-yz-9Pq" firstAttribute="trailing" secondItem="iVh-mN-xPf" secondAttribute="trailing" id="pLf-cH-3qz"/>
+                <constraint firstAttribute="centerX" secondItem="wwH-oq-aBY" secondAttribute="centerX" id="whc-eF-e0K"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="WMR-aq-hff"/>
+                    <exclude reference="iVh-mN-xPf"/>
+                    <exclude reference="wwH-oq-aBY"/>
+                    <exclude reference="B1y-m7-BWu"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="7Fw-T4-7iN"/>
+                    <exclude reference="CXg-mq-z3H"/>
+                    <exclude reference="pLf-cH-3qz"/>
+                    <exclude reference="7to-bL-1ns"/>
+                    <exclude reference="TwX-xQ-85x"/>
+                    <exclude reference="Unb-xR-i7U"/>
+                    <exclude reference="d5r-s6-Dba"/>
+                    <exclude reference="2gk-vD-08s"/>
+                    <exclude reference="gTS-No-DYM"/>
+                    <exclude reference="whc-eF-e0K"/>
+                    <exclude reference="DUX-An-sbH"/>
+                    <exclude reference="Ick-AD-XUp"/>
+                    <exclude reference="M07-P9-bsu"/>
+                    <exclude reference="WJo-qp-hWf"/>
+                    <exclude reference="mXU-PS-Dtd"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="subviews">
+                    <include reference="WMR-aq-hff"/>
+                    <include reference="iVh-mN-xPf"/>
+                    <include reference="wwH-oq-aBY"/>
+                    <include reference="B1y-m7-BWu"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="7Fw-T4-7iN"/>
+                    <include reference="CXg-mq-z3H"/>
+                    <include reference="pLf-cH-3qz"/>
+                    <include reference="7to-bL-1ns"/>
+                    <include reference="TwX-xQ-85x"/>
+                    <include reference="Unb-xR-i7U"/>
+                    <include reference="d5r-s6-Dba"/>
+                    <include reference="2gk-vD-08s"/>
+                    <exclude reference="gTS-No-DYM"/>
+                    <exclude reference="whc-eF-e0K"/>
+                    <exclude reference="DUX-An-sbH"/>
+                    <exclude reference="Ick-AD-XUp"/>
+                    <include reference="M07-P9-bsu"/>
+                    <include reference="WJo-qp-hWf"/>
+                    <include reference="mXU-PS-Dtd"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
