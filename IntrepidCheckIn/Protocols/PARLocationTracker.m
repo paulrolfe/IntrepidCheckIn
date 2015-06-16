@@ -37,7 +37,7 @@
 }
 
 - (BOOL)isMonitoringForIntrepidRegion{
-    NSLog(@"%lu",self.locationManager.monitoredRegions.count);
+    NSLog(@"Monitoring %lu Regions",(unsigned long)self.locationManager.monitoredRegions.count);
     return self.locationManager.monitoredRegions.count >= 1;
 }
 
