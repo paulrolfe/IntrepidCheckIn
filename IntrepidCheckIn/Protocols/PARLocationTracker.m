@@ -26,6 +26,8 @@
     return self;
 }
 
+#pragma mark - Public methods
+
 - (void)startMonitoringForIntrepid{
     [self.locationManager startMonitoringForRegion:[self intrepidOffice]];
 }
@@ -34,25 +36,12 @@
     [self.locationManager stopMonitoringForRegion:self.locationManager.monitoredRegions.anyObject];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region{
-    [[PARSlackRequestManager sharedManager] sendSlackMessage:@"I just got to the office :)"
-        success:^(BOOL success) {
-            [self showLocalNotificationWithMessage:@"You're in the office!"];
-        }
-        failure:^(NSError *error) {
-            NSLog(@"%@",error.localizedDescription);
-        }];
+- (BOOL)isMonitoringForIntrepidRegion{
+    NSLog(@"%lu",self.locationManager.monitoredRegions.count);
+    return self.locationManager.monitoredRegions.count >= 1;
 }
 
-- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region{
-    [[PARSlackRequestManager sharedManager] sendSlackMessage:@"I just left the office :("
-         success:^(BOOL success) {
-             [self showLocalNotificationWithMessage:@"You're leaving the office!"];
-         }
-         failure:^(NSError *error) {
-             NSLog(@"%@",error.localizedDescription);
-         }];
-}
+#pragma mark - Private methods
 
 - (CLRegion *)intrepidOffice{
     CLLocationCoordinate2D intrepidPoint = CLLocationCoordinate2DMake(42.36706,-71.080173);
@@ -60,16 +49,33 @@
     return intrepid;
 }
 
-- (BOOL)isMonitoringForIntrepidRegion{
-    NSLog(@"%lu",self.locationManager.monitoredRegions.count);
-    return self.locationManager.monitoredRegions.count >= 1;
-}
-
 - (void)showLocalNotificationWithMessage:(NSString *)message{
     UILocalNotification * hey = [[UILocalNotification alloc] init];
     hey.alertBody = message;
     hey.soundName=UILocalNotificationDefaultSoundName;
     [[UIApplication sharedApplication] scheduleLocalNotification:hey];
+}
+
+#pragma mark - Location Manager Delegate
+
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region{
+    [[PARSlackRequestManager sharedManager] sendSlackMessage:@"I just got to the office :)"
+                                                     success:^(BOOL success) {
+                                                         [self showLocalNotificationWithMessage:@"You're in the office!"];
+                                                     }
+                                                     failure:^(NSError *error) {
+                                                         NSLog(@"%@",error.localizedDescription);
+                                                     }];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region{
+    [[PARSlackRequestManager sharedManager] sendSlackMessage:@"I just left the office :("
+                                                     success:^(BOOL success) {
+                                                         [self showLocalNotificationWithMessage:@"You're leaving the office!"];
+                                                     }
+                                                     failure:^(NSError *error) {
+                                                         NSLog(@"%@",error.localizedDescription);
+                                                     }];
 }
 
 @end

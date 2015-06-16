@@ -163,13 +163,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9F77BEE0AD58E7F45FF5D453 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
 		A7DA867C7E80647535EEBA4F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,13 +199,6 @@
 				FD0077A3263B0FBCD8B026A9 /* UnitTests-Prefix.pch */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		D651F20B12B3753081EC52DC /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Headers;
 			sourceTree = "<group>";
 		};
 		D9FFC6EFD80FDB7031BB10E1 /* UnitTests */ = {
@@ -268,9 +254,7 @@
 			children = (
 				B6350642877C1CEA8DCD1963 /* PARAppDelegate.h */,
 				6416F727E5F3D93125B5C598 /* PARAppDelegate.m */,
-				9F77BEE0AD58E7F45FF5D453 /* Categories */,
 				9028D2E034B3C334D5F41BD9 /* Protocols */,
-				D651F20B12B3753081EC52DC /* Headers */,
 				E776693D842552C4DB955967 /* Models */,
 				0DA10469F3525F813BACB72B /* ViewModels */,
 				2438911DFD998676069BA313 /* Controllers */,

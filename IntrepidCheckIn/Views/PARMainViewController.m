@@ -22,6 +22,8 @@
 
 @implementation PARMainViewController
 
+#pragma mark - View Setup
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -44,6 +46,8 @@
     }
 }
 
+#pragma mark - IBActions
+
 - (IBAction)trackButtonPressed:(id)sender{
     if ([self.locationTracker isMonitoringForIntrepidRegion]){
         [self.locationTracker stopMonitoring];
@@ -54,6 +58,8 @@
         [self updateTrackingStatus];
     }
 }
+
+#pragma mark - Text Field Delegate
 
 - (void) textFieldDidEndEditing:(UITextField *)textField{
     [PARSettings setNameOfEmployee:textField.text];
