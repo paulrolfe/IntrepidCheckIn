@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EFFBD38D1C3FC69E42144F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53086146A184FD3940109FA9 /* main.m */; };
+		52FBC2762F8AA701E5B90958 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD9DED3CAF46BAF6786305D /* libPods-unit_tests.a */; };
+		5F93E8BAB17B07E13B61936A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052D652B147C080E993B7BEF /* Images.xcassets */; };
+		9085418FEF35171B4B239271 /* PARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416F727E5F3D93125B5C598 /* PARAppDelegate.m */; };
+		AAB7426B22DE32486BBCE626 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C6A7047D2DE70A2428FC4AB /* Settings.bundle */; };
+		C5ED2934329037EE128AAC34 /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9727204259512ACBA804CC6F /* LaunchScreen.xib */; };
+		F8016FCC4A39B50267F40DDA /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = C1FB24EFB72BC2378F1500C9 /* Main.storyboard */; };
+		F89EC31E6BF8CC72C509904A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B2E160FE0FFDDB069A3749 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9348A6A3B9F643AF9C92C664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E375990CCD3C8304043D68DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D3153C775124CC7EB9F4E58;
+			remoteInfo = IntrepidCheckIn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0183A681B723D5D64E00EBF6 /* IntrepidCheckIn-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IntrepidCheckIn-Prefix.pch"; sourceTree = "<group>"; };
+		052D652B147C080E993B7BEF /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0821B51AE44E8285CBFD5522 /* Pods-unit_tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.release.xcconfig"; sourceTree = "<group>"; };
+		15D77D50F0AD9DB96DA81C35 /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C6A7047D2DE70A2428FC4AB /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		44B2E160FE0FFDDB069A3749 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		53086146A184FD3940109FA9 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6416F727E5F3D93125B5C598 /* PARAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PARAppDelegate.m; sourceTree = "<group>"; };
+		673C2C30C3324245735764BB /* IntrepidCheckIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntrepidCheckIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9727204259512ACBA804CC6F /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		9CD9DED3CAF46BAF6786305D /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7555EF0287631E78740026B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28A9DC02D5C73480E2D9B36 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6350642877C1CEA8DCD1963 /* PARAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PARAppDelegate.h; sourceTree = "<group>"; };
+		B69B12ADF5CE7B55B4EB3FB1 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		C1FB24EFB72BC2378F1500C9 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FD0077A3263B0FBCD8B026A9 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2DC8D368159CDEAF6E9851C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89EC31E6BF8CC72C509904A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98E0938EE20136111685C70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FBC2762F8AA701E5B90958 /* libPods-unit_tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DA10469F3525F813BACB72B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2438911DFD998676069BA313 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6350642877C1CEA8DCD1963 /* PARAppDelegate.h */,
+				6416F727E5F3D93125B5C598 /* PARAppDelegate.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3F81C850C8F0EB455A2DFA75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4340B59E5E0C842CCF3C4440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB437EA048847D95E0C43F7D /* iOS */,
+				9CD9DED3CAF46BAF6786305D /* libPods-unit_tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50E7D91A27A57475E19812BB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5245ED8E299C072A40585CD5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C1FB24EFB72BC2378F1500C9 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9028D2E034B3C334D5F41BD9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		98ADC8AD8BA93E967F91851F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0821B51AE44E8285CBFD5522 /* Pods-unit_tests.release.xcconfig */,
+				15D77D50F0AD9DB96DA81C35 /* Pods-unit_tests.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F77BEE0AD58E7F45FF5D453 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A7DA867C7E80647535EEBA4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				673C2C30C3324245735764BB /* IntrepidCheckIn.app */,
+				B28A9DC02D5C73480E2D9B36 /* UnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDD4DE13D2A7DA26BC5759B6 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				9727204259512ACBA804CC6F /* LaunchScreen.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		C57B3042BCF56665A792842B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				052D652B147C080E993B7BEF /* Images.xcassets */,
+				5245ED8E299C072A40585CD5 /* Storyboards */,
+				BDD4DE13D2A7DA26BC5759B6 /* Nibs */,
+				DBFE3DE1AB0DE0C9DF955E8C /* Other-Sources */,
+				3C6A7047D2DE70A2428FC4AB /* Settings.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D079823B258E4AAB8DEF824A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B69B12ADF5CE7B55B4EB3FB1 /* UnitTests-Info.plist */,
+				FD0077A3263B0FBCD8B026A9 /* UnitTests-Prefix.pch */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D651F20B12B3753081EC52DC /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		D9FFC6EFD80FDB7031BB10E1 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D079823B258E4AAB8DEF824A /* Resources */,
+				50E7D91A27A57475E19812BB /* Helpers */,
+				E03885CA9CE86090F186E8AF /* Tests */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		DBFE3DE1AB0DE0C9DF955E8C /* Other-Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A7555EF0287631E78740026B /* Info.plist */,
+				0183A681B723D5D64E00EBF6 /* IntrepidCheckIn-Prefix.pch */,
+				53086146A184FD3940109FA9 /* main.m */,
+			);
+			path = "Other-Sources";
+			sourceTree = "<group>";
+		};
+		E03885CA9CE86090F186E8AF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E776693D842552C4DB955967 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED11A6B5D2A8DA5174A713FD = {
+			isa = PBXGroup;
+			children = (
+				F7C9367E31B2573BE5FC2D8A /* IntrepidCheckIn */,
+				D9FFC6EFD80FDB7031BB10E1 /* UnitTests */,
+				4340B59E5E0C842CCF3C4440 /* Frameworks */,
+				A7DA867C7E80647535EEBA4F /* Products */,
+				98ADC8AD8BA93E967F91851F /* Pods */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		F7C9367E31B2573BE5FC2D8A /* IntrepidCheckIn */ = {
+			isa = PBXGroup;
+			children = (
+				9F77BEE0AD58E7F45FF5D453 /* Categories */,
+				9028D2E034B3C334D5F41BD9 /* Protocols */,
+				D651F20B12B3753081EC52DC /* Headers */,
+				E776693D842552C4DB955967 /* Models */,
+				0DA10469F3525F813BACB72B /* ViewModels */,
+				2438911DFD998676069BA313 /* Controllers */,
+				3F81C850C8F0EB455A2DFA75 /* Views */,
+				C57B3042BCF56665A792842B /* Resources */,
+			);
+			path = IntrepidCheckIn;
+			sourceTree = "<group>";
+		};
+		FB437EA048847D95E0C43F7D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				44B2E160FE0FFDDB069A3749 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D3153C775124CC7EB9F4E58 /* IntrepidCheckIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BA84D6E8A8AF038DCDF7483 /* Build configuration list for PBXNativeTarget "IntrepidCheckIn" */;
+			buildPhases = (
+				D2E418D91DE1222873BF5F61 /* Sources */,
+				D2DC8D368159CDEAF6E9851C /* Frameworks */,
+				2D6AA6AB1F404E75F773DB08 /* Resources */,
+				6A9A67A73C668E2B2FCACBE7 /* Warn for TODO and FIXME comments */,
+				524E9BC058162DBD17DF9166 /* Set version number */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntrepidCheckIn;
+			productName = IntrepidCheckIn;
+			productReference = 673C2C30C3324245735764BB /* IntrepidCheckIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6ECB8FC20E0EDA6427C61051 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24C47D17D1A0965BC95ED9F /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				C55F2BE27DFAD9F5DD9FF7BB /* Check Pods Manifest.lock */,
+				BEE39C595A20F7527B7C5D13 /* Sources */,
+				F98E0938EE20136111685C70 /* Frameworks */,
+				6222633ED00F1EB18FFD9D78 /* Resources */,
+				036C2FA17AADE13F80933BBD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0C7410B9E256CBE6BEE8194 /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = B28A9DC02D5C73480E2D9B36 /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E375990CCD3C8304043D68DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PAR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Intrepid;
+			};
+			buildConfigurationList = 260F50C8E7F0E92AD85C7847 /* Build configuration list for PBXProject "IntrepidCheckIn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ED11A6B5D2A8DA5174A713FD;
+			productRefGroup = A7DA867C7E80647535EEBA4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D3153C775124CC7EB9F4E58 /* IntrepidCheckIn */,
+				6ECB8FC20E0EDA6427C61051 /* UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D6AA6AB1F404E75F773DB08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F93E8BAB17B07E13B61936A /* Images.xcassets in Resources */,
+				AAB7426B22DE32486BBCE626 /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6222633ED00F1EB18FFD9D78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		036C2FA17AADE13F80933BBD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		524E9BC058162DBD17DF9166 /* Set version number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set version number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git=$(sh /etc/profile; which git)\ngit_release_version=$(\"$git\" describe --tags --always --abbrev=0)\nnumber_of_commits=$(\"$git\" rev-list master | wc -l | tr -d ' ')\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\ndsym_plist=\"$DWARF_DSYM_FOLDER_PATH/$DWARF_DSYM_FILE_NAME/Contents/Info.plist\"\n\nfor plist in \"$target_plist\" \"$dsym_plist\"; do\n  if [ -f \"$plist\" ]; then\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $number_of_commits\" \"$plist\"\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${git_release_version#*v}\" \"$plist\"\n  fi\ndone\n";
+		};
+		6A9A67A73C668E2B2FCACBE7 /* Warn for TODO and FIXME comments */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Warn for TODO and FIXME comments";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"swift|h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+		C55F2BE27DFAD9F5DD9FF7BB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEE39C595A20F7527B7C5D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E418D91DE1222873BF5F61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9085418FEF35171B4B239271 /* PARAppDelegate.m in Sources */,
+				F8016FCC4A39B50267F40DDA /* Main.storyboard in Sources */,
+				C5ED2934329037EE128AAC34 /* LaunchScreen.xib in Sources */,
+				1EFFBD38D1C3FC69E42144F5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0C7410B9E256CBE6BEE8194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D3153C775124CC7EB9F4E58 /* IntrepidCheckIn */;
+			targetProxy = 9348A6A3B9F643AF9C92C664 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E9004C62459331E01A89060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntrepidCheckIn/Resources/Other-Sources/IntrepidCheckIn-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "IntrepidCheckIn/Resources/Other-Sources/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E1386B4BAE81E9CA24096FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntrepidCheckIn/Resources/Other-Sources/IntrepidCheckIn-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "IntrepidCheckIn/Resources/Other-Sources/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5AD1102DCFC0862025D35EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F120381710C0CA17707FF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D77D50F0AD9DB96DA81C35 /* Pods-unit_tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntrepidCheckIn.app/IntrepidCheckIn";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9CE31EF99334DDAD80271E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0821B51AE44E8285CBFD5522 /* Pods-unit_tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntrepidCheckIn.app/IntrepidCheckIn";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		B8A6D6F3A7B2BF5EADA0E93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		260F50C8E7F0E92AD85C7847 /* Build configuration list for PBXProject "IntrepidCheckIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A6D6F3A7B2BF5EADA0E93A /* Debug */,
+				5AD1102DCFC0862025D35EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BA84D6E8A8AF038DCDF7483 /* Build configuration list for PBXNativeTarget "IntrepidCheckIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9004C62459331E01A89060 /* Release */,
+				2E1386B4BAE81E9CA24096FD /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F24C47D17D1A0965BC95ED9F /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CE31EF99334DDAD80271E2D /* Release */,
+				6F120381710C0CA17707FF58 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E375990CCD3C8304043D68DB /* Project object */;
+}
