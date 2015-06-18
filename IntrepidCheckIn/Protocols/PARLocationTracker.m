@@ -28,6 +28,7 @@
 
 #pragma mark - Public methods
 
+
 - (void)startMonitoringForIntrepid{
     [self.locationManager startMonitoringForRegion:[self intrepidOffice]];
 }
@@ -45,7 +46,7 @@
 
 - (CLRegion *)intrepidOffice{
     CLLocationCoordinate2D intrepidPoint = CLLocationCoordinate2DMake(42.36706,-71.080173);
-    CLRegion *intrepid = [[CLCircularRegion alloc] initWithCenter:intrepidPoint radius:50 identifier:@"intrepidRegion"];
+    CLRegion *intrepid = [[CLCircularRegion alloc] initWithCenter:intrepidPoint radius:10 identifier:@"intrepidRegion"];
     return intrepid;
 }
 

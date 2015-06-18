@@ -25,8 +25,7 @@
                  success:(void (^)(BOOL success))success
                  failure:(void (^)(NSError *error))failure {
     NSLog(@"Would send a message");
-    
-    //NSString *payload = [NSString stringWithFormat:@"payload={\"text\": \"%@\", \"username\":\"%@\"}",message,[PARSettings nameOfEmployee]];
+
     NSDictionary *params = @{@"text":message, @"username":[PARSettings nameOfEmployee]};
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
