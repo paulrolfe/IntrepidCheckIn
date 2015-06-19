@@ -13,4 +13,13 @@
 + (void) setNameOfEmployee:(NSString *)name;
 + (NSString *)nameOfEmployee;
 
++ (void) setIconWebURL:(NSString *)iconURL;
++ (NSString *)iconWebURL;
+
++ (void) setLeavingMessage:(NSString *)message;
++ (NSString *)leavingMessage;
+
++ (void) setArrivingMessage:(NSString *)message;
++ (NSString *)arrivingMessage;
+
 @end

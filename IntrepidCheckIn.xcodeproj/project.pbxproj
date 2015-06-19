@@ -13,6 +13,7 @@
 		1C0103E91B306C0D00923F1A /* PARLocationTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0103E81B306C0D00923F1A /* PARLocationTracker.m */; };
 		1C0103EC1B3072E500923F1A /* PARSlackRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0103EB1B3072E500923F1A /* PARSlackRequestManager.m */; };
 		1C0103EF1B30A5E400923F1A /* PARSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0103EE1B30A5E400923F1A /* PARSettings.m */; };
+		1CB853011B34B74D008D8911 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB853001B34B74D008D8911 /* Constants.m */; };
 		1EFFBD38D1C3FC69E42144F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53086146A184FD3940109FA9 /* main.m */; };
 		52FBC2762F8AA701E5B90958 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD9DED3CAF46BAF6786305D /* libPods-unit_tests.a */; };
 		5F93E8BAB17B07E13B61936A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052D652B147C080E993B7BEF /* Images.xcassets */; };
@@ -47,8 +48,10 @@
 		1C0103E81B306C0D00923F1A /* PARLocationTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARLocationTracker.m; sourceTree = "<group>"; };
 		1C0103EA1B3072E500923F1A /* PARSlackRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARSlackRequestManager.h; sourceTree = "<group>"; };
 		1C0103EB1B3072E500923F1A /* PARSlackRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARSlackRequestManager.m; sourceTree = "<group>"; };
-		1C0103ED1B30A5E400923F1A /* PARSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARSettings.h; sourceTree = "<group>"; };
-		1C0103EE1B30A5E400923F1A /* PARSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARSettings.m; sourceTree = "<group>"; };
+		1C0103ED1B30A5E400923F1A /* PARSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PARSettings.h; path = ../ViewModels/PARSettings.h; sourceTree = "<group>"; };
+		1C0103EE1B30A5E400923F1A /* PARSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PARSettings.m; path = ../ViewModels/PARSettings.m; sourceTree = "<group>"; };
+		1CB852FF1B34B74D008D8911 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		1CB853001B34B74D008D8911 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		2210CD07148FCC8A51CC8046 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6A7047D2DE70A2428FC4AB /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		44B2E160FE0FFDDB069A3749 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -89,13 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DA10469F3525F813BACB72B /* ViewModels */ = {
+		1CB852FB1B34B0D3008D8911 /* Locations */ = {
 			isa = PBXGroup;
 			children = (
-				1C0103ED1B30A5E400923F1A /* PARSettings.h */,
-				1C0103EE1B30A5E400923F1A /* PARSettings.m */,
+				1C0103E71B306C0D00923F1A /* PARLocationTracker.h */,
+				1C0103E81B306C0D00923F1A /* PARLocationTracker.m */,
 			);
-			path = ViewModels;
+			name = Locations;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		2438911DFD998676069BA313 /* Controllers */ = {
@@ -106,13 +110,6 @@
 				1C0103E21B305BA700923F1A /* PARMainViewController.xib */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		3F81C850C8F0EB455A2DFA75 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		4340B59E5E0C842CCF3C4440 /* Frameworks */ = {
@@ -141,14 +138,13 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		9028D2E034B3C334D5F41BD9 /* Protocols */ = {
+		9028D2E034B3C334D5F41BD9 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				1C0103E71B306C0D00923F1A /* PARLocationTracker.h */,
-				1C0103E81B306C0D00923F1A /* PARLocationTracker.m */,
 				1C0103EA1B3072E500923F1A /* PARSlackRequestManager.h */,
 				1C0103EB1B3072E500923F1A /* PARSlackRequestManager.m */,
 			);
+			name = Networking;
 			path = Protocols;
 			sourceTree = "<group>";
 		};
@@ -231,6 +227,8 @@
 		E776693D842552C4DB955967 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1C0103ED1B30A5E400923F1A /* PARSettings.h */,
+				1C0103EE1B30A5E400923F1A /* PARSettings.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,11 +252,12 @@
 			children = (
 				B6350642877C1CEA8DCD1963 /* PARAppDelegate.h */,
 				6416F727E5F3D93125B5C598 /* PARAppDelegate.m */,
-				9028D2E034B3C334D5F41BD9 /* Protocols */,
+				1CB852FF1B34B74D008D8911 /* Constants.h */,
+				1CB853001B34B74D008D8911 /* Constants.m */,
+				9028D2E034B3C334D5F41BD9 /* Networking */,
+				1CB852FB1B34B0D3008D8911 /* Locations */,
 				E776693D842552C4DB955967 /* Models */,
-				0DA10469F3525F813BACB72B /* ViewModels */,
 				2438911DFD998676069BA313 /* Controllers */,
-				3F81C850C8F0EB455A2DFA75 /* Views */,
 				C57B3042BCF56665A792842B /* Resources */,
 			);
 			path = IntrepidCheckIn;
@@ -484,6 +483,7 @@
 				C5ED2934329037EE128AAC34 /* LaunchScreen.xib in Sources */,
 				1C0103EC1B3072E500923F1A /* PARSlackRequestManager.m in Sources */,
 				1EFFBD38D1C3FC69E42144F5 /* main.m in Sources */,
+				1CB853011B34B74D008D8911 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

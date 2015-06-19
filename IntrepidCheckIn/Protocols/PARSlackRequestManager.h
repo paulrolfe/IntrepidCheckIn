@@ -15,5 +15,6 @@
                  success:(void (^)(BOOL success))success
                  failure:(void (^)(NSError *error))failure;
 
+- (void)uploadAndSavePhoto:(UIImage *)photo;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "PARLocationTracker.h"
 #import "PARSlackRequestManager.h"
+#import "PARSettings.h"
 
 @interface PARLocationTracker ()
 
@@ -60,7 +61,7 @@
 #pragma mark - Location Manager Delegate
 
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region{
-    [[PARSlackRequestManager sharedManager] sendSlackMessage:@"I just got to the office :)"
+    [[PARSlackRequestManager sharedManager] sendSlackMessage: [PARSettings arrivingMessage]
                                                      success:^(BOOL success) {
                                                          [self showLocalNotificationWithMessage:@"You're in the office!"];
                                                      }
@@ -70,7 +71,7 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region{
-    [[PARSlackRequestManager sharedManager] sendSlackMessage:@"I just left the office :("
+    [[PARSlackRequestManager sharedManager] sendSlackMessage:[PARSettings leavingMessage]
                                                      success:^(BOOL success) {
                                                          [self showLocalNotificationWithMessage:@"You're leaving the office!"];
                                                      }

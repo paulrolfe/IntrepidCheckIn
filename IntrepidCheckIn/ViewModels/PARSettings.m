@@ -17,4 +17,25 @@
     return [[NSUserDefaults standardUserDefaults] objectForKey:@"kUsername"];
 }
 
++ (void) setIconWebURL:(NSString *)iconURL{
+    [[NSUserDefaults standardUserDefaults] setObject:iconURL forKey:@"kIconWebURL"];
+}
++ (NSString *)iconWebURL{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"kIconWebURL"];
+}
+
++ (void) setArrivingMessage:(NSString *)message{
+    [[NSUserDefaults standardUserDefaults] setObject:message forKey:@"kArriveMessage"];
+}
++ (NSString *) arrivingMessage{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"kArriveMessage"];
+}
+
++ (void) setLeavingMessage:(NSString *)message{
+    [[NSUserDefaults standardUserDefaults] setObject:message forKey:@"kLeaveMessage"];
+}
++ (NSString *) leavingMessage{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"kLeaveMessage"];
+}
+
 @end

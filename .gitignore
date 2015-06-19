@@ -1,6 +1,10 @@
 # OS X Finder
 .DS_Store
 
+# Secret Keys
+Constants.h
+Constants.m
+
 # Xcode per-user config
 *.mode1
 *.mode1v3

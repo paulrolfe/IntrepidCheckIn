@@ -20,26 +20,37 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AWSCore (2.2.0)
+  - AWSS3 (2.2.0):
+    - AWSCore (= 2.2.0)
   - Expecta (1.0.0)
   - IQKeyboardManager (3.2.4)
   - OCMock (3.1.2)
   - OHHTTPStubs (4.0.2)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
   - Specta (1.0.2)
 
 DEPENDENCIES:
   - AFNetworking
+  - AWSS3
   - Expecta
   - IQKeyboardManager
   - OCMock
   - OHHTTPStubs
+  - SDWebImage
   - Specta
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AWSCore: 36712cbe827a50b81f1660349e0c202339797f23
+  AWSS3: 5efcdff6010353fe53ef065be7760d60419c65b1
   Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
   IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
   OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
   OHHTTPStubs: dbd1957d414659783e07b49c961940b7564c23d9
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
 
 COCOAPODS: 0.37.2

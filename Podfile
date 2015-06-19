@@ -5,6 +5,8 @@ platform :ios, '8.0'
 # Add Application pods here
 pod 'AFNetworking'
 pod 'IQKeyboardManager'
+pod 'SDWebImage'
+pod 'AWSS3'
 
 target :unit_tests, :exclusive => true do
   link_with 'UnitTests'

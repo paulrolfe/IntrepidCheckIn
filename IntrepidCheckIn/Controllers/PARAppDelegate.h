@@ -9,5 +9,6 @@
 @interface PARAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
++ (NSString *)applicationDocumentsDirectory;
 
 @end
